@@ -1,0 +1,159 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-size: 14px;
+}
+
+.container {
+  height: 100%;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 600px;
+  height: 450px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+
+.left-con {
+  height: 100%;
+}
+
+.left-con img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.right {
+  width: 50%;
+}
+
+.right-con {
+  padding: 1.6rem 2rem;
+}
+
+.product-category {
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.product-name {
+  color: hsl(212, 21%, 14%);
+  font-size: 32px;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  line-height: 95%;
+  margin: 1.5rem 0;
+}
+
+.product-detail {
+  color: hsl(228, 12%, 48%);
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.offer-price {
+  color: hsl(158, 36%, 37%);
+  font-size: 32px;
+  font-family: "Fraunces", sans-serif;
+  margin: 1.5rem 0;
+}
+
+.original-price {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.right-con button {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  padding: 1rem 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.right-con button:hover {
+  background-color: hsl(158, 59%, 12%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    height: 40%;
+  }
+
+  .left-con img {
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .right {
+    width: 100%;
+    height: 60%;
+  }
+
+  .right-con {
+    padding: 0.8rem 1.8rem;
+  }
+
+  .product-name {
+    margin: 0.6rem 0;
+  }
+
+  .product-detail {
+    margin: 0.6rem 0;
+  }
+
+  .offer-price {
+    margin: 0.8rem 0;
+  }
+}
